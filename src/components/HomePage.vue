@@ -613,6 +613,7 @@ export default {
   transition: .3s ease-in-out;
 
   .btn-card {
+    cursor: pointer;
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 2vh;
@@ -626,6 +627,12 @@ export default {
     border: none;
     color: #ffffff;
     background: linear-gradient(to bottom, #E97324, #E78E28);
+  }
+
+  .btn-card:hover {
+    /* Gradiente e animação no estado de hover */
+    background-position: center bottom;
+    background: linear-gradient(to bottom, #E97324, #FDC008);
   }
 
   .card_plan {
@@ -724,6 +731,7 @@ export default {
   transition: .3s ease-in-out;
 
   .btn-card {
+    cursor: pointer;
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 2vh;
@@ -736,7 +744,13 @@ export default {
     border-radius: 25px;
     border: none;
     color: #ffffff;
-    background-image: linear-gradient(to left, #2933FF, #0008B2);
+    background-image: linear-gradient(to bottom, #2933FF, #0008B2);
+  }
+
+  .btn-card:hover {
+    /* Gradiente e animação no estado de hover */
+    background-position: center bottom;
+    background-image: linear-gradient(to top, #2933FF, #0008B2);
   }
 
   .card_plan {
@@ -1302,6 +1316,7 @@ export default {
     color: #ffffff;
     background-image: linear-gradient(to left, #2933FF, #0008B2);
   }
+
 
   .card-basic {
     margin-top: 5vh;
