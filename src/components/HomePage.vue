@@ -986,7 +986,7 @@ export default {
   flex-wrap: wrap;
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: left;
     padding: 15px 0 0 10px;
   }
