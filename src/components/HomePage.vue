@@ -1477,6 +1477,30 @@ export default {
       }
     }
   }
+
+}
+
+@media (min-width: 767px) {
+  .div_cardAvaliation {
+
+    .user_Avaliation {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-content: start;
+    }
+
+    .user_AvaliationTitle {
+      img {
+        height: 40%;
+        padding: 5px 0 0 5px;
+      }
+    }
+    p {
+      font-size: 0.7em;
+    }
+  }
 }
 
 </style>
