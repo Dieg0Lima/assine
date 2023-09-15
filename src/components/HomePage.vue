@@ -72,7 +72,13 @@ export default {
           CONECTA VOCÊ
           AO QUE MAIS
           IMPORTA!</p>
+          <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
+            <div class="button_container">
+              <button class="custom_button">Conheça nossos planos</button>
+            </div>
+          </a>
         </div>
+        <!-- Seção Inicial: Botão de chamada para ação -->
         <div class="ballons-home">
           <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="">
           <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="">
@@ -80,13 +86,6 @@ export default {
           <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="">
         </div>
       </div>
-
-      <!-- Seção Inicial: Botão de chamada para ação -->
-      <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
-        <div class="button_container">
-          <button class="custom_button">Conheça nossos planos</button>
-        </div>
-      </a>
     </div>
   </div>
 
@@ -243,7 +242,7 @@ export default {
             <div class="div_titleForm">
               <h1>CADASTRE-SE E RECEBA UMA OFERTA ESPECIAL!</h1>
               <h2>Fique por dentro de todas as ofertas e notícias da <b>AGE Telecom!</b></h2>
-              <h2>Aqui, você não perde <b>HBO Max</b> tenha acesso e descontos em mais de 300 lojas prceiras e muito
+              <h2>Aqui, você não perde nada: acompanhe os lançamentos da <b>HBO Max</b> tenha acesso e descontos em mais de 300 lojas parceiras e muito
                 mais!</h2>
             </div>
             <div class="div_forms">
@@ -548,7 +547,7 @@ export default {
   padding: 12px 36px;
   margin-top: 2vh;
   border-radius: 4vh;
-  font-size: 1.2em;
+  font-size: .5em;
   font-weight: 500;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -856,7 +855,7 @@ export default {
   }
 
   h2 {
-    width: 60%;
+    width: 70%;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
