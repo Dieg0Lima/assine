@@ -56,6 +56,11 @@ export default {
       ],
       selectedOption: '' // Inicialmente nenhuma opção selecionada
     };
+  },
+  methods: {
+    redirectWhatsApp() {
+      window.open("https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age", "_blank");
+    }
   }
 };
 
@@ -258,7 +263,7 @@ export default {
                     }}
                   </option>
                 </select>
-                <button>RECEBER MINHA OFERTA!</button>
+                <button @click="redirectWhatsApp">RECEBER MINHA OFERTA!</button>
               </form>
             </div>
           </div>
