@@ -77,7 +77,7 @@ export default {
           CONECTA VOCÊ
           AO QUE MAIS
           IMPORTA!</p>
-          <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age" target="_blank">
             <div class="button_container">
               <button class="custom_button">Conheça nossos planos</button>
             </div>
