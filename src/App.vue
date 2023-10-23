@@ -1,6 +1,6 @@
 <script>
 import CustomButton from './components/CustomButton.vue';
-import 'animate.css'
+import 'animate.css';
 
 export default {
   data() {
@@ -81,7 +81,7 @@ export default {
       </div>
 
     </div>
-    <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+    <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
       <custom-button class="custom-button" text="QUERO CONTRATAR"/>
     </a>
   </nav>

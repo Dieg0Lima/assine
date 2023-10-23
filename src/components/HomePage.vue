@@ -1,69 +1,86 @@
 <script>
-
-import {vMaska} from 'maska';
+import { vMaska } from "maska";
 
 export default {
-  directives: {maska: vMaska},
+  directives: { maska: vMaska },
   data() {
     return {
       maskOptions: {
         mask: "(##) #####-####",
-        eager: true
+        eager: true,
       },
       buttons: {
         btn1: {
-          marginTop: "45vh ", marginRight: "40vw", width: "22%", height: "20%", fontWeight: "600"
-        }
+          marginTop: "45vh ",
+          marginRight: "40vw",
+          width: "22%",
+          height: "20%",
+          fontWeight: "600",
+        },
       },
       optionsList: [
-        {label: 'Arapoanga', value: 'Arapoanga'},
-        {label: 'Arniqueira', value: 'Arniqueira'},
-        {label: 'Brazlândia', value: 'Brazlandia'},
-        {label: 'Candangolândia', value: 'Candangolandia'},
-        {label: 'Ceilândia', value: 'Ceilandia'},
-        {label: 'Cruzeiro', value: 'Cruzeiro'},
-        {label: 'Cruzeiro Velho', value: 'CruzeiroVelho'},
-        {label: 'Gama', value: 'Gama'},
-        {label: 'Guará', value: 'Guara'},
-        {label: 'Itapoã', value: 'Itapoa'},
-        {label: 'Jardim Botânico', value: 'JardimBotanico'},
-        {label: 'Lago Norte', value: 'LagoNorte'},
-        {label: 'Lago Sul', value: 'LagoSul'},
-        {label: 'Noroeste', value: 'Noroeste'},
-        {label: 'Núcleo Bandeirante', value: 'NucleoBandeirante'},
-        {label: 'Paranoá', value: 'Paranoa'},
-        {label: 'Park Way', value: 'ParkWay'},
-        {label: 'Planaltina', value: 'Planaltina'},
-        {label: 'Plano Piloto', value: 'PlanoPiloto'},
-        {label: 'Polo de Modas Guará', value: 'PolodeModas'},
-        {label: 'Pôr do Sol', value: 'PorDoSol'},
-        {label: 'Recanto das Emas', value: 'RecantodasEmas'},
-        {label: 'Riacho Fundo I', value: 'RiachoFundo1'},
-        {label: 'Riacho Fundo II', value: 'RiachoFundo2'},
-        {label: 'SAAN', value: 'SAAN'},
-        {label: 'Samambaia', value: 'Samambaia'},
-        {label: 'Santa Maria', value: 'SantaMaria'},
-        {label: 'São Sebastião', value: 'SaoSebastiao'},
-        {label: 'SIA', value: 'SIA'},
-        {label: 'Sobradinho I', value: 'Sobradinho1'},
-        {label: 'Sobradinho II', value: 'Sobradinho2'},
-        {label: 'SOF SUL', value: 'SOFSUL'},
-        {label: 'Sol Nascente', value: 'SolNascente'},
-        {label: 'Taguatinga', value: 'Taguatinga'},
-        {label: 'Taquari', value: 'Taquari'},
-        {label: 'Varjão', value: 'Varjao'},
-        {label: 'Vicente Pires', value: 'VicentePires'}
+        { label: "Arapoanga", value: "Arapoanga" },
+        { label: "Arniqueira", value: "Arniqueira" },
+        { label: "Brazlândia", value: "Brazlandia" },
+        { label: "Candangolândia", value: "Candangolandia" },
+        { label: "Ceilândia", value: "Ceilandia" },
+        { label: "Cruzeiro", value: "Cruzeiro" },
+        { label: "Cruzeiro Velho", value: "CruzeiroVelho" },
+        { label: "Gama", value: "Gama" },
+        { label: "Guará", value: "Guara" },
+        { label: "Itapoã", value: "Itapoa" },
+        { label: "Jardim Botânico", value: "JardimBotanico" },
+        { label: "Lago Norte", value: "LagoNorte" },
+        { label: "Lago Sul", value: "LagoSul" },
+        { label: "Noroeste", value: "Noroeste" },
+        { label: "Núcleo Bandeirante", value: "NucleoBandeirante" },
+        { label: "Paranoá", value: "Paranoa" },
+        { label: "Park Way", value: "ParkWay" },
+        { label: "Planaltina", value: "Planaltina" },
+        { label: "Plano Piloto", value: "PlanoPiloto" },
+        { label: "Polo de Modas Guará", value: "PolodeModas" },
+        { label: "Pôr do Sol", value: "PorDoSol" },
+        { label: "Recanto das Emas", value: "RecantodasEmas" },
+        { label: "Riacho Fundo I", value: "RiachoFundo1" },
+        { label: "Riacho Fundo II", value: "RiachoFundo2" },
+        { label: "SAAN", value: "SAAN" },
+        { label: "Samambaia", value: "Samambaia" },
+        { label: "Santa Maria", value: "SantaMaria" },
+        { label: "São Sebastião", value: "SaoSebastiao" },
+        { label: "SIA", value: "SIA" },
+        { label: "Sobradinho I", value: "Sobradinho1" },
+        { label: "Sobradinho II", value: "Sobradinho2" },
+        { label: "SOF SUL", value: "SOFSUL" },
+        { label: "Sol Nascente", value: "SolNascente" },
+        { label: "Taguatinga", value: "Taguatinga" },
+        { label: "Taquari", value: "Taquari" },
+        { label: "Varjão", value: "Varjao" },
+        { label: "Vicente Pires", value: "VicentePires" },
       ],
-      selectedOption: '' // Inicialmente nenhuma opção selecionada
+      selectedOption: "", // Inicialmente nenhuma opção selecionada
     };
   },
   methods: {
     redirectWhatsApp() {
-      window.open("https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age", "_blank");
-    }
-  }
-};
+      const defaultURL =
+        "https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age";
+      const googleURL = "https://me-qr.com/RImUYefA"; // Substitua pela URL que você deseja usar quando o parâmetro estiver presente
 
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const parametro = urlParams.get("b1d01434621734be08d75952041a178d");
+
+      const redirectTo =
+        parametro === "(e)RxptY<@ih~R_Mw_i,|7ptQ26|bdq:" ? googleURL : defaultURL;
+
+      window.open(redirectTo, "_blank");
+    },
+  },
+  mounted() {
+    // Chame a função quando o componente for montado
+    window.updateWhatsAppLinks();
+  },
+};
 </script>
 
 <template>
@@ -72,12 +89,17 @@ export default {
       <!-- Seção Inicial: Título -->
       <div class="div_homeTitle">
         <div>
-        <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png" alt="logoAge">
-        <p>A <b>AGE TELECOM</b>
-          CONECTA VOCÊ
-          AO QUE MAIS
-          IMPORTA!</p>
-          <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age" target="_blank">
+          <img
+            class="logo-home"
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
+            alt="logoAge"
+          />
+          <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
+          <a
+            class="whatsapp-link"
+            href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            target="_blank"
+          >
             <div class="button_container">
               <button class="custom_button">Conheça nossos planos</button>
             </div>
@@ -85,10 +107,26 @@ export default {
         </div>
         <!-- Seção Inicial: Botão de chamada para ação -->
         <div class="ballons-home">
-          <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="">
-          <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="">
-          <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="">
-          <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="">
+          <img
+            class="wifi"
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png"
+            alt=""
+          />
+          <img
+            class="brasilia"
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png"
+            alt=""
+          />
+          <img
+            class="ilimitado"
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png"
+            alt=""
+          />
+          <img
+            class="ra100"
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -98,17 +136,34 @@ export default {
     <div class="div_homeContainer">
       <!-- Seção Inicial: Título -->
       <div class="div_homeTitle">
-        <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png" alt="logoAge">
-        <p>A <b>AGE TELECOM</b>
-          CONECTA VOCÊ
-          AO QUE MAIS
-          IMPORTA!</p>
+        <img
+          class="logo-home"
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
+          alt="logoAge"
+        />
+        <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
       </div>
       <div class="ballons-home">
-        <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="">
-        <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="">
-        <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="">
-        <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="">
+        <img
+          class="wifi"
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png"
+          alt=""
+        />
+        <img
+          class="brasilia"
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png"
+          alt=""
+        />
+        <img
+          class="ilimitado"
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png"
+          alt=""
+        />
+        <img
+          class="ra100"
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png"
+          alt=""
+        />
       </div>
       <!-- Seção Inicial: Botão de chamada para ação -->
       <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
@@ -121,15 +176,26 @@ export default {
 
   <!-- Seção de Planos -->
   <main>
-    <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficios.jpg" class="banner-beneficios" alt="Banner Beneficios">
-    <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png" class="banner-beneficios-mobile" alt="Banner Beneficios">
+    <img
+      src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficios.jpg"
+      class="banner-beneficios"
+      alt="Banner Beneficios"
+    />
+    <img
+      src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png"
+      class="banner-beneficios-mobile"
+      alt="Banner Beneficios"
+    />
 
     <div>
       <div class="div_container">
         <div class="div_cardBlue">
           <div class="div_cards">
-            <a style="text-decoration: none"
-               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO MEDIUM</h1>
@@ -146,8 +212,11 @@ export default {
                 </div>
               </div>
             </a>
-            <a style="text-decoration: none"
-               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card-basic">
                 <div class="card_plan">
                   <h1>PLANO BASIC</h1>
@@ -164,8 +233,10 @@ export default {
                 </div>
               </div>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-               style="text-decoration: none">
+            <a
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+              style="text-decoration: none"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
@@ -184,8 +255,11 @@ export default {
             </a>
           </div>
           <div class="div_cards-mobile">
-            <a style="text-decoration: none"
-               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card-basic">
                 <div class="card_plan">
                   <h1>PLANO BASIC</h1>
@@ -202,8 +276,11 @@ export default {
                 </div>
               </div>
             </a>
-            <a style="text-decoration: none"
-               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
+            <a
+              class="whatsapp-link"
+              style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO MEDIUM</h1>
@@ -220,8 +297,11 @@ export default {
                 </div>
               </div>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-               style="text-decoration: none">
+            <a
+              class="whatsapp-link"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+              style="text-decoration: none"
+            >
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
@@ -239,28 +319,66 @@ export default {
               </div>
             </a>
           </div>
-          <button class="btn_wantedPlan"><a
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">QUERO
-            CONTRATAR</a>
+          <button class="btn_wantedPlan">
+            <a
+              class="whatsapp-link"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+              >QUERO CONTRATAR</a
+            >
           </button>
           <div>
             <div class="div_titleForm">
               <h1>CADASTRE-SE E RECEBA UMA OFERTA ESPECIAL!</h1>
-              <h2>Fique por dentro de todas as ofertas e notícias da <b>AGE Telecom!</b></h2>
-              <h2>Aqui, você não perde nada: acompanhe os lançamentos da <b>HBO Max</b> tenha acesso e descontos em mais de 300 lojas parceiras e muito
-                mais!</h2>
+              <h2>
+                Fique por dentro de todas as ofertas e notícias da <b>AGE Telecom!</b>
+              </h2>
+              <h2>
+                Aqui, você não perde nada: acompanhe os lançamentos da
+                <b>HBO Max</b> tenha acesso e descontos em mais de 300 lojas parceiras e
+                muito mais!
+              </h2>
             </div>
             <div class="div_forms">
               <form action="#" class="div_formFlex" name="assine">
-                <input type="text" placeholder="Seu nome" name="name" id="name" autocomplete="off" required>
-                <input type="email" placeholder="Seu e-mail" name="email" id="email" autocomplete="off" required>
-                <input type="text" placeholder="(DDD) N° de telefone" v-maska:[maskOptions] id="telefone"
-                       name="telefone" autocomplete="off" required>
-                <select class="form_select" v-model="selectedOption" id="selectOption" name="city" required>
+                <input
+                  type="text"
+                  placeholder="Seu nome"
+                  name="name"
+                  id="name"
+                  autocomplete="off"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Seu e-mail"
+                  name="email"
+                  id="email"
+                  autocomplete="off"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="(DDD) N° de telefone"
+                  v-maska:[maskOptions]
+                  id="telefone"
+                  name="telefone"
+                  autocomplete="off"
+                  required
+                />
+                <select
+                  class="form_select"
+                  v-model="selectedOption"
+                  id="selectOption"
+                  name="city"
+                  required
+                >
                   <option value="" disabled selected>Selecione sua cidade</option>
-                  <option v-for="option in optionsList" :key="option.value" :value="option.value">{{
-                      option.label
-                    }}
+                  <option
+                    v-for="option in optionsList"
+                    :key="option.value"
+                    :value="option.value"
+                  >
+                    {{ option.label }}
                   </option>
                 </select>
                 <button @click="redirectWhatsApp">RECEBER MINHA OFERTA!</button>
@@ -278,42 +396,68 @@ export default {
       </div>
       <!-- Título de Avaliações -->
       <div class="div_titleAvaliation">
-        <p>O QUE DIZEM NOSSOS<br> CLIENTES</p>
+        <p>
+          O QUE DIZEM NOSSOS<br />
+          CLIENTES
+        </p>
       </div>
       <!-- Avaliações de Clientes -->
       <div class="div_avaliation">
         <!-- Avaliação 1 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation1.png" alt="">
+            <img
+              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation1.png"
+              alt=""
+            />
             <div class="user_AvaliationTitle">
               <p><b>Aninha FR</b></p>
-              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="">
+              <img
+                src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png"
+                alt=""
+              />
             </div>
           </div>
-          <p>"Estou com ela a alguns dias até agora não tive nenhum problema! Aqui na ceilandia o sinal é ótimo ela é
-            super rápida e o técnico e atende foram ótimos. Estou gostando!"</p>
+          <p>
+            "Estou com ela a alguns dias até agora não tive nenhum problema! Aqui na
+            ceilandia o sinal é ótimo ela é super rápida e o técnico e atende foram
+            ótimos. Estou gostando!"
+          </p>
         </div>
         <!-- Avaliação 2 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation2.png" alt="">
+            <img
+              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation2.png"
+              alt=""
+            />
             <div class="user_AvaliationTitle">
               <p><b>Celiane Rodrigues</b></p>
-              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="">
+              <img
+                src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png"
+                alt=""
+              />
             </div>
           </div>
-          <p>"Minha experiência com Age telecom é a melhor sem sombra de dúvidas, tenho ela já a 7 meses nunca tive
-            grandes problemas igual eu tive com a oi, vivo obti, AGE SUPER supre nossas necessidades! Indico de olhos
-            fechados."</p>
+          <p>
+            "Minha experiência com Age telecom é a melhor sem sombra de dúvidas, tenho ela
+            já a 7 meses nunca tive grandes problemas igual eu tive com a oi, vivo obti,
+            AGE SUPER supre nossas necessidades! Indico de olhos fechados."
+          </p>
         </div>
         <!-- Avaliação 3 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation3.png" alt="">
+            <img
+              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation3.png"
+              alt=""
+            />
             <div class="user_AvaliationTitle">
               <p><b>Laiane Bertoldo</b></p>
-              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="">
+              <img
+                src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png"
+                alt=""
+              />
             </div>
           </div>
           <p>"A melhor internet fibra óptica do mercado muito obrigada por tudo."</p>
@@ -327,34 +471,66 @@ export default {
     <div class="div_help">
       <div class="btn_help">
         <a href="https://portal.agetelecom.com.br/auth/login" target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnFatura.png" alt="">
-          <p>2° VIA DA <br> FATURA</p>
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnFatura.png"
+            alt=""
+          />
+          <p>
+            2° VIA DA <br />
+            FATURA
+          </p>
         </a>
       </div>
       <div class="btn_help">
-        <a href="https://api.whatsapp.com/send?phone=556140404040" target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnAtendimento.png" alt="">
+        <a
+          class="whatsapp-link"
+          href="https://api.whatsapp.com/send?phone=556140404040"
+          target="_blank"
+        >
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnAtendimento.png"
+            alt=""
+          />
           <p>ATENDIMENTO</p>
         </a>
       </div>
       <div class="btn_help">
-        <a href="https://api.whatsapp.com/send?phone=556140404040" target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnSuporte.png" alt="">
-          <p>SUPORTE<br>TÉCNICO</p>
+        <a
+          class="whatsapp-link"
+          href="https://api.whatsapp.com/send?phone=556140404040"
+          target="_blank"
+        >
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnSuporte.png"
+            alt=""
+          />
+          <p>SUPORTE<br />TÉCNICO</p>
         </a>
       </div>
       <div class="btn_help">
-        <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-           target="_blank">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnVendas.png" alt="">
+        <a
+          class="whatsapp-link"
+          href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+          target="_blank"
+        >
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnVendas.png"
+            alt=""
+          />
           <p>VENDAS</p>
         </a>
       </div>
     </div>
     <div class="whatsapp-button">
-      <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-         target="_blank">
-        <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/whatsapp-icon.webp" alt="WhatsApp">
+      <a
+        class="whatsapp-link"
+        href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+        target="_blank"
+      >
+        <img
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/whatsapp-icon.webp"
+          alt="WhatsApp"
+        />
       </a>
     </div>
   </main>
@@ -363,7 +539,10 @@ export default {
     <div class="div_firstColumn">
       <div class="div_firstItem">
         <a href="https://www.agetelecom.com.br/">
-          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/AgeLogoFooter.png" alt="">
+          <img
+            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/AgeLogoFooter.png"
+            alt=""
+          />
         </a>
       </div>
       <div class="div_secondItem">
@@ -377,17 +556,21 @@ export default {
       </div>
     </div>
     <div class="div_secondColumn">
-      <p>Permanência mínima de 12 meses. Multa de infidelidade de R$ 950,00 (pro rata), podendo também ser adquirido sem
-        permancência mínima nos termos do regulamento. Pagamento em débito em conta disponível nos bancos Santander e
-        Caixa Econômica Federal. Para correntistas dos demais bancos, os meios de pagamento disponíveis são apenas
-        boleto e cartão de crédito (bandeiras Mastercards, Visa, Cielo, American Express, Elo, Diners Club, Agiplan,
-        Banes Card, Hipercard, JCB, Credz). Sem taxa de instalação. Equipamentos em locação. Não é possível realizar
-        downgrade nos 3 primeiros meses. Consulte disponibilidade dos serviços, valores, regulamento de ofertas,
-        contrato de permanência e mais informações em: https://www.agetelecom.com.br</p>
+      <p>
+        Permanência mínima de 12 meses. Multa de infidelidade de R$ 950,00 (pro rata),
+        podendo também ser adquirido sem permancência mínima nos termos do regulamento.
+        Pagamento em débito em conta disponível nos bancos Santander e Caixa Econômica
+        Federal. Para correntistas dos demais bancos, os meios de pagamento disponíveis
+        são apenas boleto e cartão de crédito (bandeiras Mastercards, Visa, Cielo,
+        American Express, Elo, Diners Club, Agiplan, Banes Card, Hipercard, JCB, Credz).
+        Sem taxa de instalação. Equipamentos em locação. Não é possível realizar downgrade
+        nos 3 primeiros meses. Consulte disponibilidade dos serviços, valores, regulamento
+        de ofertas, contrato de permanência e mais informações em:
+        https://www.agetelecom.com.br
+      </p>
     </div>
   </footer>
 </template>
-
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
@@ -397,7 +580,8 @@ export default {
   text-align: center;
   width: 100vw;
   height: 70vh;
-  background: url('https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerHome.png') center/cover no-repeat;
+  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerHome.png")
+    center/cover no-repeat;
 }
 
 .div_home-mobile {
@@ -422,7 +606,6 @@ export default {
   justify-content: center;
   align-items: start;
   flex-direction: row;
-
 }
 
 .div_homeTitle {
@@ -552,16 +735,16 @@ export default {
   padding: 12px 36px;
   margin-top: 2vh;
   border-radius: 4vh;
-  font-size: .5em;
+  font-size: 0.5em;
   font-weight: 500;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 10px;
 
   /* Gradiente no estado normal */
-  background-image: linear-gradient(to bottom, #2933FF, #0008B2);
+  background-image: linear-gradient(to bottom, #2933ff, #0008b2);
   background-size: 100% 200%;
   background-position: center top;
   transition: background-position 0.3s ease;
@@ -570,7 +753,7 @@ export default {
 .custom_button:hover {
   /* Gradiente e animação no estado de hover */
   background-position: center bottom;
-  background-image: linear-gradient(to bottom, #2933FF, #0008B2);
+  background-image: linear-gradient(to bottom, #2933ff, #0008b2);
 }
 
 .div_cardBlue {
@@ -615,7 +798,7 @@ export default {
   justify-content: space-between;
   border: 3px solid #ffffff;
   min-width: 280px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   .btn-card {
     cursor: pointer;
@@ -631,13 +814,13 @@ export default {
     border-radius: 25px;
     border: none;
     color: #ffffff;
-    background: linear-gradient(to bottom, #E97324, #E78E28);
+    background: linear-gradient(to bottom, #e97324, #e78e28);
   }
 
   .btn-card:hover {
     /* Gradiente e animação no estado de hover */
     background-position: center bottom;
-    background: linear-gradient(to bottom, #E97324, #FDC008);
+    background: linear-gradient(to bottom, #e97324, #fdc008);
   }
 
   .card_plan {
@@ -678,7 +861,6 @@ export default {
         font-weight: 800;
       }
     }
-
   }
 
   .card_price {
@@ -706,9 +888,7 @@ export default {
         font-weight: 400;
       }
     }
-
   }
-
 }
 
 .card-basic:hover {
@@ -717,8 +897,7 @@ export default {
 }
 
 .card {
-
-  background-color: #E97324;
+  background-color: #e97324;
   color: white;
   border-radius: 1vw;
   width: 280px;
@@ -731,9 +910,9 @@ export default {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 3px solid #FDC008;
+  border: 3px solid #fdc008;
   min-width: 280px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   .btn-card {
     cursor: pointer;
@@ -749,13 +928,13 @@ export default {
     border-radius: 25px;
     border: none;
     color: #ffffff;
-    background-image: linear-gradient(to bottom, #2933FF, #0008B2);
+    background-image: linear-gradient(to bottom, #2933ff, #0008b2);
   }
 
   .btn-card:hover {
     /* Gradiente e animação no estado de hover */
     background-position: center bottom;
-    background-image: linear-gradient(to top, #2933FF, #0008B2);
+    background-image: linear-gradient(to top, #2933ff, #0008b2);
   }
 
   .card_plan {
@@ -765,7 +944,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #E97324, #E78E28);
+    background: linear-gradient(to bottom, #e97324, #e78e28);
     border-radius: 1vw 1vw 0 0;
     cursor: pointer;
 
@@ -776,7 +955,7 @@ export default {
       text-align: center;
       color: #ffffff;
       padding: 15px 0 15px 0;
-      background: linear-gradient(to right, #E97324, #FDC008);
+      background: linear-gradient(to right, #e97324, #fdc008);
       box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
       border-radius: 1vh;
     }
@@ -790,7 +969,6 @@ export default {
         font-weight: 800;
       }
     }
-
   }
 
   .card_price {
@@ -817,9 +995,7 @@ export default {
         font-weight: 400;
       }
     }
-
   }
-
 }
 
 .card:hover {
@@ -839,7 +1015,7 @@ export default {
   cursor: pointer;
   border: none;
   /* Gradiente no estado normal */
-  background: linear-gradient(to bottom, #E97324, #FDC008);
+  background: linear-gradient(to bottom, #e97324, #fdc008);
   background-size: 100% 200%;
   background-position: center top;
   transition: background-position 1s ease;
@@ -853,9 +1029,8 @@ export default {
 .btn_wantedPlan:hover {
   /* Gradiente e animação no estado de hover */
   background-position: center bottom;
-  background: linear-gradient(to bottom, #E97324, #FDC008);
+  background: linear-gradient(to bottom, #e97324, #fdc008);
 }
-
 
 .div_titleForm {
   display: flex;
@@ -894,7 +1069,7 @@ export default {
 .div_formFlex {
   width: 1000px;
   height: 500px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -911,7 +1086,7 @@ export default {
     font-size: 1.2rem;
     font-weight: 500;
     color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   button {
@@ -920,13 +1095,13 @@ export default {
     font-size: 1.3rem;
     font-weight: 600;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     border: none;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 10px;
 
     /* Gradiente no estado normal */
-    background-image: linear-gradient(to bottom, #2933FF, #0008B2);
+    background-image: linear-gradient(to bottom, #2933ff, #0008b2);
     background-size: 100% 200%;
     background-position: center top;
     transition: background-position 0.3s ease;
@@ -935,7 +1110,7 @@ export default {
   button:hover {
     /* Gradiente e animação no estado de hover */
     background-position: center bottom;
-    background-image: linear-gradient(to bottom, #2933FF, #0008B2);
+    background-image: linear-gradient(to bottom, #2933ff, #0008b2);
   }
 
   .form_select {
@@ -948,23 +1123,23 @@ export default {
     font-size: 1.2rem;
     font-weight: 500;
     color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   .form_select option {
     padding: 16px;
     color: #333;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 }
-
 
 .div_indicateContainer {
   position: relative;
   text-align: center;
   width: 100vw;
   height: 80vh;
-  background: url('https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanhe.jpg') center/cover no-repeat;
+  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanhe.jpg")
+    center/cover no-repeat;
 }
 
 .div_avaliation {
@@ -989,7 +1164,6 @@ export default {
   display: flex;
   justify-content: start;
   align-content: start;
-
 }
 
 .div_cardAvaliation {
@@ -1016,7 +1190,6 @@ export default {
       padding: 5px 0 0 5px;
     }
   }
-
 }
 
 .whatsapp-button {
@@ -1024,12 +1197,12 @@ export default {
   bottom: 20px; /* Distância a partir do fundo da página */
   right: 20px; /* Distância a partir do lado direito da página */
   z-index: 9999; /* Certifique-se de que o botão esteja acima de outros elementos */
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .whatsapp-button:hover {
   transform: scale(1.2);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .whatsapp-button img {
@@ -1048,18 +1221,18 @@ export default {
   p {
     margin-top: 2vh;
     font-weight: 700;
-    color: #0008B2;
+    color: #0008b2;
   }
 
   .btn_help {
     margin-left: 3vw;
-    transform: scale(1.0);
+    transform: scale(1);
     transition: 0.5s;
   }
 
   a {
     text-decoration: none;
-    color: #0008B2;
+    color: #0008b2;
   }
 }
 
@@ -1069,7 +1242,7 @@ export default {
 }
 
 .div_footer {
-  background-color: #0008B2;
+  background-color: #0008b2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1092,10 +1265,8 @@ export default {
     }
 
     .div_secondItem {
-
       margin-right: 7vw;
       margin-top: 2vh;
-
     }
 
     .div_thirdItem {
@@ -1121,14 +1292,14 @@ export default {
 }
 
 @media (max-width: 767px) {
-
   .div_home-mobile {
     display: flex;
     position: relative;
     text-align: center;
     width: 100vw;
     height: 95vh;
-    background: url('https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerMobile.png') center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerMobile.png")
+      center/cover no-repeat;
   }
 
   .div_home {
@@ -1255,13 +1426,13 @@ export default {
     font-size: 1em;
     font-weight: 500;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     border: none;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 10px;
 
     /* Gradiente no estado normal */
-    background-image: linear-gradient(to bottom, #2933FF, #0008B2);
+    background-image: linear-gradient(to bottom, #2933ff, #0008b2);
     background-size: 100% 200%;
     background-position: center top;
     transition: background-position 0.3s ease;
@@ -1277,7 +1448,8 @@ export default {
     text-align: center;
     width: 100vw;
     height: 60vh;
-    background: url('https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png') center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png")
+      center/cover no-repeat;
   }
 
   .div_cards {
@@ -1319,9 +1491,8 @@ export default {
     border-radius: 25px;
     border: none;
     color: #ffffff;
-    background-image: linear-gradient(to left, #2933FF, #0008B2);
+    background-image: linear-gradient(to left, #2933ff, #0008b2);
   }
-
 
   .card-basic {
     margin-top: 5vh;
@@ -1348,7 +1519,7 @@ export default {
 
     h2 {
       width: 80%;
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-weight: 400;
       text-align: center;
       color: #ffffff;
@@ -1380,7 +1551,7 @@ export default {
       font-size: 1rem;
       font-weight: 600;
       color: white;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       border: none;
       cursor: pointer;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 10px;
@@ -1404,7 +1575,8 @@ export default {
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background: url('https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanheMobile.png') center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanheMobile.png")
+      center/cover no-repeat;
   }
 
   .div_avaliation {
@@ -1448,12 +1620,11 @@ export default {
   }
 
   .div_footer {
-
     .div_secondColumn {
       margin-top: 2vh;
 
       p {
-        font-size: .3rem;
+        font-size: 0.3rem;
       }
     }
 
@@ -1476,33 +1647,31 @@ export default {
 
       .div_secondItem {
         width: 35%;
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-top: 2vh;
         margin-bottom: 2vh;
 
         h1 {
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
       }
 
       .div_thirdItem {
         width: 54%;
-        font-size: .5rem;
+        font-size: 0.5rem;
         text-align: right;
         margin-top: 2vh;
 
         h1 {
-          font-size: .6rem;
+          font-size: 0.6rem;
         }
       }
     }
   }
-
 }
 
 @media (min-width: 767px) {
   .div_cardAvaliation {
-
     .user_Avaliation {
       height: 20%;
       width: 100%;
@@ -1522,5 +1691,4 @@ export default {
     }
   }
 }
-
 </style>
