@@ -28,12 +28,21 @@ export default {
 
 <template>
   <div class="sectionTwo-container">
-    <a target="_blank"
+    <a
+      target="_blank"
       href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+conhecer+os+planos+de+internet+Black+November+Age"
     >
       <div class="banner-container">
-        <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/ageBlackBanner.png" class="desktop-banner" alt="Banner para Desktop">
-        <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/ageBannerBlackMobile.jpg" class="mobile-banner" alt="Banner para Mobile">
+        <img
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/ageBlackBanner.png"
+          class="desktop-banner"
+          alt="Banner para Desktop"
+        />
+        <img
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/ageBannerBlackMobile.jpg"
+          class="mobile-banner"
+          alt="Banner para Mobile"
+        />
       </div>
     </a>
   </div>
@@ -50,10 +59,9 @@ $background-page: #17191a;
     height: 100%;
     object-fit: cover;
     object-position: center;
-
-    .mobile-banner {
-      display: none;
-    }
+  }
+  .mobile-banner {
+    display: none;
   }
 }
 
@@ -61,7 +69,7 @@ $background-page: #17191a;
   .desktop-banner {
     display: none; // Esconde a imagem para desktop em telas pequenas
   }
-  .mobile-banner {
+  .sectionTwo-container .mobile-banner {
     display: block; // Mostra a imagem para mobile em telas pequenas
   }
 }
