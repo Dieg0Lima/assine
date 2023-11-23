@@ -57,6 +57,12 @@ export default {
       }, 1000);
     }
   },
+  computed: {
+    // Computed property para verificar se a rota atual é '/blacknovember'
+    isBlackNovember() {
+      return this.$route.path === '/blacknovember';
+    },
+  },
   components: {CustomButton}
 }
 
@@ -64,7 +70,7 @@ export default {
 
 
 <template>
-  <nav>
+  <nav v-if="!isBlackNovember">
     <router-link to="/"><img src="../src/assets/logoAgeTelecom.png" alt="logoAge"></router-link>
     <div class="div_menu">
 
