@@ -50,10 +50,10 @@ $background-page: #17191a;
     height: 100%;
     object-fit: cover;
     object-position: center;
-  }
 
-  .mobile-banner {
-    display: none;
+    .mobile-banner {
+      display: none;
+    }
   }
 }
 
