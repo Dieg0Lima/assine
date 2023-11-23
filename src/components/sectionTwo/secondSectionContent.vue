@@ -51,6 +51,10 @@ $background-page: #17191a;
     object-fit: cover;
     object-position: center;
   }
+
+  .mobile-banner {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
