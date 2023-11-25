@@ -34,12 +34,12 @@ export default {
     >
       <div class="banner-container">
         <img
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/ageBlackBanner.png"
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/Banner-LPNew.png"
           class="desktop-banner"
           alt="Banner para Desktop"
         />
         <img
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/ageBannerBlackMobile.jpg"
+          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/Banner-LP-Mobile-New.png"
           class="mobile-banner"
           alt="Banner para Mobile"
         />

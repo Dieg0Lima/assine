@@ -3,9 +3,9 @@ export default {
   name: "CountDown",
   data() {
     return {
-      endDate: new Date("2023-12-31T23:59:59"), // Defina a data de fim aqui
+      endDate: new Date("2023-11-26T23:59:59"), // Defina a data de fim aqui
       time: {
-        hours: "00",
+        totalHours: "00",
         minutes: "00",
         seconds: "00"
       },
@@ -17,7 +17,6 @@ export default {
     this.timerInterval = setInterval(this.calculateTime, 1000);
   },
   beforeUnmount() {
-    // ou beforeDestroy() para Vue 2
     clearInterval(this.timerInterval);
   },
   methods: {
@@ -26,19 +25,16 @@ export default {
       const difference = this.endDate - now;
 
       if (difference <= 0) {
-        this.time = { hours: "00", minutes: "00", seconds: "00" };
+        this.time = { totalHours: "00", minutes: "00", seconds: "00" };
         clearInterval(this.timerInterval);
-        // Aqui você pode emitir um evento ou fazer algo quando o contador terminar
       } else {
-        const hours = Math.floor(
-          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
+        const totalHours = Math.floor(difference / (1000 * 60 * 60));
         const minutes = Math.floor(
           (difference % (1000 * 60 * 60)) / (1000 * 60)
         );
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        this.time.hours = hours < 10 ? "0" + hours : hours.toString();
+        this.time.totalHours = totalHours < 10 ? "0" + totalHours : totalHours.toString();
         this.time.minutes = minutes < 10 ? "0" + minutes : minutes.toString();
         this.time.seconds = seconds < 10 ? "0" + seconds : seconds.toString();
       }
@@ -46,7 +42,7 @@ export default {
   },
   computed: {
     hourLabel() {
-      return this.time.hours === "01" ? "HORA" : "HORAS";
+      return this.time.totalHours === "01" ? "HORA" : "HORAS";
     },
     minuteLabel() {
       return this.time.minutes === "01" ? "MINUTO" : "MINUTOS";
@@ -62,7 +58,7 @@ export default {
   <div class="timer-container">
     <div class="flex-timer-container">
       <div class="timer">
-        <span class="time">{{ time.hours }}</span>
+        <span class="time">{{ time.totalHours }}</span>
       </div>
       <span class="label">{{ hourLabel }}</span>
     </div>
@@ -81,7 +77,7 @@ export default {
   </div>
 </template>
 
-  <style scoped>
+<style scoped>
 .timer-container {
   width: 42vw;
   display: flex;
@@ -113,45 +109,58 @@ export default {
 }
 
 .time {
-  font-size: 5em; /* Ajuste o tamanho da fonte conforme necessário */
+  font-size: 5em;
+  /* Ajuste o tamanho da fonte conforme necessário */
   margin: 0;
   color: #626b70;
   font-weight: 700;
 }
 
 .label {
-  font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário */
+  font-size: 1em;
+  /* Ajuste o tamanho da fonte conforme necessário */
   margin: 2vh 0;
 }
 
 /* Media Queries para telas menores (até 600px) */
 @media only screen and (max-width: 600px) {
   .timer-container {
-    width: 100%; /* Use toda a largura disponível */
-    flex-direction: row; /* Empilhe os temporizadores verticalmente */
-    align-items: center; /* Centralize os itens */
-    justify-content: center; /* Centralize ao longo do eixo principal */
+    width: 100%;
+    /* Use toda a largura disponível */
+    flex-direction: row;
+    /* Empilhe os temporizadores verticalmente */
+    align-items: center;
+    /* Centralize os itens */
+    justify-content: center;
+    /* Centralize ao longo do eixo principal */
   }
 
   .flex-timer-container {
     justify-content: center;
-    width: 100%; /* Use toda a largura disponível */
-    margin: 1vh 0; /* Ajuste a margem para espaçamento vertical */
+    width: 100%;
+    /* Use toda a largura disponível */
+    margin: 1vh 0;
+    /* Ajuste a margem para espaçamento vertical */
   }
 
   .timer {
     border-radius: 1rem;
-    height: 10vh; /* Ajuste a altura */
-    width: 80%; /* Ajuste a largura */
-    margin: 1vh auto; /* Centralize horizontalmente e ajuste a margem vertical */
+    height: 10vh;
+    /* Ajuste a altura */
+    width: 80%;
+    /* Ajuste a largura */
+    margin: 1vh auto;
+    /* Centralize horizontalmente e ajuste a margem vertical */
   }
 
   .time {
-    font-size: 2.5em; /* Ajuste o tamanho da fonte */
+    font-size: 2.5em;
+    /* Ajuste o tamanho da fonte */
   }
 
   .label {
-    font-size: 0.8em; /* Ajuste o tamanho da fonte para os rótulos */
+    font-size: 0.8em;
+    /* Ajuste o tamanho da fonte para os rótulos */
     margin: 1vh 0;
   }
 }
@@ -159,28 +168,37 @@ export default {
 /* Media Queries para tablets ou telas de tamanho médio (601px a 1024px) */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .timer-container {
-    width: 80%; /* Ajuste a largura */
-    flex-direction: row; /* Disponha os temporizadores horizontalmente */
-    justify-content: center; /* Centralize ao longo do eixo principal */
+    width: 80%;
+    /* Ajuste a largura */
+    flex-direction: row;
+    /* Disponha os temporizadores horizontalmente */
+    justify-content: center;
+    /* Centralize ao longo do eixo principal */
   }
 
   .flex-timer-container {
     justify-content: center;
-    width: 33%; /* Distribua o espaço igualmente */
+    width: 33%;
+    /* Distribua o espaço igualmente */
   }
 
   .timer {
-    height: 18vh; /* Ajuste a altura */
-    width: 100%; /* Use toda a largura disponível */
-    margin: 1vh auto; /* Centralize horizontalmente e ajuste a margem vertical */
+    height: 18vh;
+    /* Ajuste a altura */
+    width: 100%;
+    /* Use toda a largura disponível */
+    margin: 1vh auto;
+    /* Centralize horizontalmente e ajuste a margem vertical */
   }
 
   .time {
-    font-size: 4em; /* Ajuste o tamanho da fonte */
+    font-size: 4em;
+    /* Ajuste o tamanho da fonte */
   }
 
   .label {
-    font-size: 0.9em; /* Ajuste o tamanho da fonte para os rótulos */
+    font-size: 0.9em;
+    /* Ajuste o tamanho da fonte para os rótulos */
     margin: 1vh 0;
   }
 }

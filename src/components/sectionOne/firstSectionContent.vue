@@ -8,13 +8,10 @@
         <br />
         <span class="thirdContentSpan" v-html="principal[2]"></span>
         <CountDown />
-        <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/BlackFriday-Selo.png" class="overlay-image" alt="Imagem Promocional" />
-        <a
-          target="_blank"
-          class="whatsapp-link"
-          style="text-decoration: none"
-          href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+conhecer+os+planos+de+internet+Black+November+Age"
-        >
+        <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/blackNovember/BlackFriday-Selo.png"
+          class="overlay-image" alt="Imagem Promocional" />
+        <a target="_blank" class="whatsapp-link" style="text-decoration: none"
+          href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+conhecer+os+planos+de+internet+Black+November+Age">
           <div class="principal-button">Conhecer Black age</div>
         </a>
       </div>
@@ -81,22 +78,18 @@ $font-family-default: "Montserrat", sans-serif;
   align-items: $align;
 }
 
-@mixin font-styling(
-  $size,
+@mixin font-styling($size,
   $color: $font-color-default,
-  $weight: $font-weight-semi-bold
-) {
+  $weight: $font-weight-semi-bold) {
   font-size: $size;
   color: $color;
   font-weight: $weight;
 }
 
-@mixin absolute-center(
-  $positionX: left,
+@mixin absolute-center($positionX: left,
   $positionY: bottom,
   $offsetX: 50%,
-  $offsetY: -3%
-) {
+  $offsetY: -3%) {
   position: absolute;
   #{$positionX}: $offsetX;
   #{$positionY}: $offsetY;
@@ -190,10 +183,7 @@ $font-family-default: "Montserrat", sans-serif;
     @include font-styling(1rem);
   }
 
-  .section-container
-    .principal-container
-    .principal-content
-    .secondContentSpan {
+  .section-container .principal-container .principal-content .secondContentSpan {
     @include font-styling(1.2rem, $font-color-highlight, 500);
   }
 
@@ -207,31 +197,39 @@ $font-family-default: "Montserrat", sans-serif;
 }
 
 @media only screen and (max-width: 360px) {
-  .section-container {
-    height: auto;
+  .section-container .principal-container {
+    width: 80%;
+    height: 70vh;
+    border-radius: 1rem;
+    margin: 10vh 0;
   }
 
-  .principal-container {
-    width: 100%; // Ajuste para telas muito pequenas
-    height: auto;
-    border-radius: 1rem;
+  .section-container .principal-container .overlay-image {
+    @include absolute-center(right, top, -30%, -5%);
+    width: 80%;
+    z-index: 10;
+  }
 
-    .overlay-image {
-      width: 70%;
-    }
+  .section-container .principal-container .principal-content {
+    margin-top: 20vh;
+    margin-left: 0vw;
+    text-align: center;
+  }
 
-    .principal-content {
-      margin-left: 3vw;
+  .section-container .principal-container .principal-content .firstContentSpan {
+    @include font-styling(1rem);
+  }
 
-      .secondContentSpan {
-        font-size: 1.8rem;
-      }
-    }
+  .section-container .principal-container .principal-content .secondContentSpan {
+    @include font-styling(1.2rem, $font-color-highlight, 500);
+  }
 
-    .principal-button {
-      padding: 2vh 2vw;
-      font-size: 1.2rem;
-    }
+  .section-container .principal-container .principal-content .thirdContentSpan {
+    @include font-styling(1rem);
+  }
+
+  .section-container .principal-container .principal-button {
+    font-size: .8rem;
   }
 }
 </style>
