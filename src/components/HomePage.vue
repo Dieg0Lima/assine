@@ -89,17 +89,12 @@ export default {
       <!-- Seção Inicial: Título -->
       <div class="div_homeTitle">
         <div>
-          <img
-            class="logo-home"
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
-            alt="logoAge"
-          />
+          <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
+            alt="logoAge" />
           <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
-          <a
-            class="whatsapp-link"
+          <a class="whatsapp-link"
             href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-            target="_blank"
-          >
+            target="_blank">
             <div class="button_container">
               <button class="custom_button">Conheça nossos planos</button>
             </div>
@@ -107,26 +102,10 @@ export default {
         </div>
         <!-- Seção Inicial: Botão de chamada para ação -->
         <div class="ballons-home">
-          <img
-            class="wifi"
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png"
-            alt=""
-          />
-          <img
-            class="brasilia"
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png"
-            alt=""
-          />
-          <img
-            class="ilimitado"
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png"
-            alt=""
-          />
-          <img
-            class="ra100"
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png"
-            alt=""
-          />
+          <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
+          <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
+          <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />
+          <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />
         </div>
       </div>
     </div>
@@ -136,34 +115,15 @@ export default {
     <div class="div_homeContainer">
       <!-- Seção Inicial: Título -->
       <div class="div_homeTitle">
-        <img
-          class="logo-home"
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
-          alt="logoAge"
-        />
+        <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
+          alt="logoAge" />
         <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
       </div>
       <div class="ballons-home">
-        <img
-          class="wifi"
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png"
-          alt=""
-        />
-        <img
-          class="brasilia"
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png"
-          alt=""
-        />
-        <img
-          class="ilimitado"
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png"
-          alt=""
-        />
-        <img
-          class="ra100"
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png"
-          alt=""
-        />
+        <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
+        <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
+        <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />
+        <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />
       </div>
       <!-- Seção Inicial: Botão de chamada para ação -->
       <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
@@ -176,26 +136,12 @@ export default {
 
   <!-- Seção de Planos -->
   <main>
-    <img
-      src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficios.jpg"
-      class="banner-beneficios"
-      alt="Banner Beneficios"
-    />
-    <img
-      src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png"
-      class="banner-beneficios-mobile"
-      alt="Banner Beneficios"
-    />
-
     <div>
       <div class="div_container">
         <div class="div_cardBlue">
           <div class="div_cards">
-            <a
-              class="whatsapp-link"
-              style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-            >
+            <a class="whatsapp-link" style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO MEDIUM</h1>
@@ -212,11 +158,8 @@ export default {
                 </div>
               </div>
             </a>
-            <a
-              class="whatsapp-link"
-              style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-            >
+            <a class="whatsapp-link" style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
               <div class="card-basic">
                 <div class="card_plan">
                   <h1>PLANO BASIC</h1>
@@ -233,10 +176,8 @@ export default {
                 </div>
               </div>
             </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-              style="text-decoration: none"
-            >
+            <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+              style="text-decoration: none">
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
@@ -255,11 +196,8 @@ export default {
             </a>
           </div>
           <div class="div_cards-mobile">
-            <a
-              class="whatsapp-link"
-              style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-            >
+            <a class="whatsapp-link" style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
               <div class="card-basic">
                 <div class="card_plan">
                   <h1>PLANO BASIC</h1>
@@ -276,11 +214,8 @@ export default {
                 </div>
               </div>
             </a>
-            <a
-              class="whatsapp-link"
-              style="text-decoration: none"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-            >
+            <a class="whatsapp-link" style="text-decoration: none"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO MEDIUM</h1>
@@ -297,11 +232,9 @@ export default {
                 </div>
               </div>
             </a>
-            <a
-              class="whatsapp-link"
+            <a class="whatsapp-link"
               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-              style="text-decoration: none"
-            >
+              style="text-decoration: none">
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
@@ -320,11 +253,9 @@ export default {
             </a>
           </div>
           <button class="btn_wantedPlan">
-            <a
-              class="whatsapp-link"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-              >QUERO CONTRATAR</a
-            >
+            <a class="whatsapp-link"
+              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">QUERO
+              CONTRATAR</a>
           </button>
           <div>
             <div class="div_titleForm">
@@ -340,44 +271,13 @@ export default {
             </div>
             <div class="div_forms">
               <form action="#" class="div_formFlex" name="assine">
-                <input
-                  type="text"
-                  placeholder="Seu nome"
-                  name="name"
-                  id="name"
-                  autocomplete="off"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="Seu e-mail"
-                  name="email"
-                  id="email"
-                  autocomplete="off"
-                  required
-                />
-                <input
-                  type="text"
-                  placeholder="(DDD) N° de telefone"
-                  v-maska:[maskOptions]
-                  id="telefone"
-                  name="telefone"
-                  autocomplete="off"
-                  required
-                />
-                <select
-                  class="form_select"
-                  v-model="selectedOption"
-                  id="selectOption"
-                  name="city"
-                  required
-                >
+                <input type="text" placeholder="Seu nome" name="name" id="name" autocomplete="off" required />
+                <input type="email" placeholder="Seu e-mail" name="email" id="email" autocomplete="off" required />
+                <input type="text" placeholder="(DDD) N° de telefone" v-maska:[maskOptions] id="telefone" name="telefone"
+                  autocomplete="off" required />
+                <select class="form_select" v-model="selectedOption" id="selectOption" name="city" required>
                   <option value="" disabled selected>Selecione sua cidade</option>
-                  <option
-                    v-for="option in optionsList"
-                    :key="option.value"
-                    :value="option.value"
-                  >
+                  <option v-for="option in optionsList" :key="option.value" :value="option.value">
                     {{ option.label }}
                   </option>
                 </select>
@@ -388,6 +288,10 @@ export default {
         </div>
       </div>
     </div>
+    <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficios.jpg" class="banner-beneficios"
+      alt="Banner Beneficios" />
+    <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png"
+      class="banner-beneficios-mobile" alt="Banner Beneficios" />
     <!-- Rodapé -->
     <div class="div_special">
       <!-- Seção de Avaliações e Ajuda -->
@@ -406,16 +310,10 @@ export default {
         <!-- Avaliação 1 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img
-              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation1.png"
-              alt=""
-            />
+            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation1.png" alt="" />
             <div class="user_AvaliationTitle">
               <p><b>Aninha FR</b></p>
-              <img
-                src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png"
-                alt=""
-              />
+              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="" />
             </div>
           </div>
           <p>
@@ -427,16 +325,10 @@ export default {
         <!-- Avaliação 2 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img
-              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation2.png"
-              alt=""
-            />
+            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation2.png" alt="" />
             <div class="user_AvaliationTitle">
               <p><b>Celiane Rodrigues</b></p>
-              <img
-                src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png"
-                alt=""
-              />
+              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="" />
             </div>
           </div>
           <p>
@@ -448,16 +340,10 @@ export default {
         <!-- Avaliação 3 -->
         <div class="div_cardAvaliation">
           <div class="user_Avaliation">
-            <img
-              src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation3.png"
-              alt=""
-            />
+            <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation3.png" alt="" />
             <div class="user_AvaliationTitle">
               <p><b>Laiane Bertoldo</b></p>
-              <img
-                src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png"
-                alt=""
-              />
+              <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/user_Avaliation.png" alt="" />
             </div>
           </div>
           <p>"A melhor internet fibra óptica do mercado muito obrigada por tudo."</p>
@@ -471,10 +357,7 @@ export default {
     <div class="div_help">
       <div class="btn_help">
         <a href="https://portal.agetelecom.com.br/auth/login" target="_blank">
-          <img
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnFatura.png"
-            alt=""
-          />
+          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnFatura.png" alt="" />
           <p>
             2° VIA DA <br />
             FATURA
@@ -482,55 +365,31 @@ export default {
         </a>
       </div>
       <div class="btn_help">
-        <a
-          class="whatsapp-link"
-          href="https://api.whatsapp.com/send?phone=556140404040"
-          target="_blank"
-        >
-          <img
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnAtendimento.png"
-            alt=""
-          />
+        <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=556140404040" target="_blank">
+          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnAtendimento.png" alt="" />
           <p>ATENDIMENTO</p>
         </a>
       </div>
       <div class="btn_help">
-        <a
-          class="whatsapp-link"
-          href="https://api.whatsapp.com/send?phone=556140404040"
-          target="_blank"
-        >
-          <img
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnSuporte.png"
-            alt=""
-          />
+        <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=556140404040" target="_blank">
+          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnSuporte.png" alt="" />
           <p>SUPORTE<br />TÉCNICO</p>
         </a>
       </div>
       <div class="btn_help">
-        <a
-          class="whatsapp-link"
+        <a class="whatsapp-link"
           href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-          target="_blank"
-        >
-          <img
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnVendas.png"
-            alt=""
-          />
+          target="_blank">
+          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/btnVendas.png" alt="" />
           <p>VENDAS</p>
         </a>
       </div>
     </div>
     <div class="whatsapp-button">
-      <a
-        class="whatsapp-link"
+      <a class="whatsapp-link"
         href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-        target="_blank"
-      >
-        <img
-          src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/whatsapp-icon.webp"
-          alt="WhatsApp"
-        />
+        target="_blank">
+        <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/whatsapp-icon.webp" alt="WhatsApp" />
       </a>
     </div>
   </main>
@@ -539,10 +398,7 @@ export default {
     <div class="div_firstColumn">
       <div class="div_firstItem">
         <a href="https://www.agetelecom.com.br/">
-          <img
-            src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/AgeLogoFooter.png"
-            alt=""
-          />
+          <img src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/AgeLogoFooter.png" alt="" />
         </a>
       </div>
       <div class="div_secondItem">
@@ -580,8 +436,7 @@ export default {
   text-align: center;
   width: 100vw;
   height: 70vh;
-  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerHome.png")
-    center/cover no-repeat;
+  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerHome.png") center/cover no-repeat;
 }
 
 .div_home-mobile {
@@ -602,6 +457,7 @@ export default {
 }
 
 .div_container {
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -673,42 +529,53 @@ export default {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-5px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 @keyframes balaoFlutuante2 {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 @keyframes balaoFlutuante3 {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 @keyframes balaoFlutuante4 {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -727,7 +594,7 @@ export default {
   text-align: center;
 }
 
-.div_homeTitle:hover + .tooltip {
+.div_homeTitle:hover+.tooltip {
   display: block;
 }
 
@@ -768,6 +635,7 @@ export default {
 }
 
 .div_cards {
+  margin-top: 4vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1138,8 +1006,7 @@ export default {
   text-align: center;
   width: 100vw;
   height: 80vh;
-  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanhe.jpg")
-    center/cover no-repeat;
+  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanhe.jpg") center/cover no-repeat;
 }
 
 .div_avaliation {
@@ -1194,9 +1061,12 @@ export default {
 
 .whatsapp-button {
   position: fixed;
-  bottom: 20px; /* Distância a partir do fundo da página */
-  right: 20px; /* Distância a partir do lado direito da página */
-  z-index: 9999; /* Certifique-se de que o botão esteja acima de outros elementos */
+  bottom: 20px;
+  /* Distância a partir do fundo da página */
+  right: 20px;
+  /* Distância a partir do lado direito da página */
+  z-index: 9999;
+  /* Certifique-se de que o botão esteja acima de outros elementos */
   transition: 0.3s ease-in-out;
 }
 
@@ -1206,7 +1076,8 @@ export default {
 }
 
 .whatsapp-button img {
-  width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 60px;
+  /* Ajuste o tamanho da imagem conforme necessário */
 }
 
 .div_help {
@@ -1298,8 +1169,7 @@ export default {
     text-align: center;
     width: 100vw;
     height: 95vh;
-    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerMobile.png")
-      center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerMobile.png") center/cover no-repeat;
   }
 
   .div_home {
@@ -1367,42 +1237,53 @@ export default {
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-5px);
     }
+
     100% {
       transform: translateY(0);
     }
   }
+
   @keyframes balaoFlutuante2 {
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-10px);
     }
+
     100% {
       transform: translateY(0);
     }
   }
+
   @keyframes balaoFlutuante3 {
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-8px);
     }
+
     100% {
       transform: translateY(0);
     }
   }
+
   @keyframes balaoFlutuante4 {
     0% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-10px);
     }
+
     100% {
       transform: translateY(0);
     }
@@ -1448,8 +1329,7 @@ export default {
     text-align: center;
     width: 100vw;
     height: 60vh;
-    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png")
-      center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerBeneficiosMobile.png") center/cover no-repeat;
   }
 
   .div_cards {
@@ -1575,8 +1455,7 @@ export default {
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanheMobile.png")
-      center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerIndiqueGanheMobile.png") center/cover no-repeat;
   }
 
   .div_avaliation {
@@ -1686,6 +1565,7 @@ export default {
         padding: 5px 0 0 5px;
       }
     }
+
     p {
       font-size: 0.7em;
     }
