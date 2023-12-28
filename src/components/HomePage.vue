@@ -170,7 +170,7 @@ export default {
                 </div>
                 <div class="card_price">
                   <h2>Mensal</h2>
-                  <span><b>R$</b>89,90*</span>
+                  <span><b>R$</b>89,50*</span>
                   <p>CONSULTE CONDIÇÕES</p>
                   <button class="btn-card">ASSINE AGORA</button>
                 </div>
