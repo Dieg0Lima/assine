@@ -57,7 +57,7 @@ export default {
         { label: "Varjão", value: "Varjao" },
         { label: "Vicente Pires", value: "VicentePires" },
       ],
-      selectedOption: "", // Inicialmente nenhuma opção selecionada
+      selectedOption: "",
     };
   },
   methods: {
@@ -77,7 +77,6 @@ export default {
     },
   },
   mounted() {
-    // Chame a função quando o componente for montado
     window.updateWhatsAppLinks();
   },
 };
@@ -88,25 +87,25 @@ export default {
     <div class="div_homeContainer">
       <!-- Seção Inicial: Título -->
       <div class="div_homeTitle">
-        <div>
-          <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
-            alt="logoAge" />
-          <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
-          <a class="whatsapp-link"
-            href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-            target="_blank">
-            <div class="button_container">
-              <button class="custom_button">Conheça nossos planos</button>
-            </div>
-          </a>
-        </div>
+<!--        <div>-->
+<!--          <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"-->
+<!--            alt="logoAge" />-->
+<!--          <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>-->
+<!--          <a class="whatsapp-link"-->
+<!--            href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"-->
+<!--            target="_blank">-->
+<!--            <div class="button_container">-->
+<!--              <button class="custom_button">Conheça nossos planos</button>-->
+<!--            </div>-->
+<!--          </a>-->
+<!--        </div>-->
         <!-- Seção Inicial: Botão de chamada para ação -->
-        <div class="ballons-home">
-          <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
-          <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
-          <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />
-          <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />
-        </div> 
+<!--        <div class="ballons-home">-->
+<!--          <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />-->
+<!--          <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />-->
+<!--          <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />-->
+<!--          <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />-->
+<!--        </div> -->
       </div>
     </div>
   </div>
@@ -114,23 +113,23 @@ export default {
   <div class="div_home-mobile">
     <div class="div_homeContainer">
       <!-- Seção Inicial: Título -->
-      <div class="div_homeTitle">
-        <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
-          alt="logoAge" />
-        <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
-      </div>
-      <div class="ballons-home">
-        <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
-        <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
-        <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />
-        <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />
-      </div>
+<!--      <div class="div_homeTitle">-->
+<!--        <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"-->
+<!--          alt="logoAge" />-->
+<!--        <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>-->
+<!--      </div>-->
+<!--      <div class="ballons-home">-->
+<!--        <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />-->
+<!--        <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />-->
+<!--        <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />-->
+<!--        <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />-->
+<!--      </div>-->
       <!-- Seção Inicial: Botão de chamada para ação -->
-      <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
-        <div class="button_container">
-          <button class="custom_button">Conheça nossos planos</button>
-        </div>
-      </a>
+<!--      <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">-->
+<!--        <div class="button_container">-->
+<!--          <button class="custom_button">Conheça nossos planos</button>-->
+<!--        </div>-->
+<!--      </a>-->
     </div>
   </div>
 
@@ -436,7 +435,7 @@ export default {
   text-align: center;
   width: 100vw;
   height: 65vh;
-  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerHome.png") center/cover no-repeat;
+  background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/CarvaAgeBanner.png") center/cover no-repeat;
 }
 
 .div_home-mobile {
@@ -1169,7 +1168,7 @@ export default {
     text-align: center;
     width: 100vw;
     height: 88vh;
-    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/bannerMobile.png") center/cover no-repeat;
+    background: url("https://assinenovo.s3.sa-east-1.amazonaws.com/assets/CarvaAgeMobileBanner.png") center/cover no-repeat;
   }
 
   .div_home {
