@@ -85,47 +85,47 @@ export default {
 <template>
   <div class="div_home">
     <div class="div_homeContainer">
-      <div class="div_homeTitle">
-       <div>
-         <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
-           alt="logoAge" />
-         <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
-         <a class="whatsapp-link"
-           href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
-           target="_blank">
-           <div class="button_container">
-             <button class="custom_button">Conheça nossos planos</button>
-           </div>
-         </a>
-       </div>
-       <div class="ballons-home">
-         <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
-         <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
-         <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />
-         <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />
-       </div>
-      </div>
+      <!-- <div class="div_homeTitle">
+        <div>
+          <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
+            alt="logoAge" />
+          <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
+          <a class="whatsapp-link"
+            href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            target="_blank">
+            <div class="button_container">
+              <button class="custom_button">Conheça nossos planos</button>
+            </div>
+          </a>
+        </div>
+        <div class="ballons-home">
+          <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
+          <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
+          <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />
+          <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />
+        </div>
+      </div> -->
     </div>
   </div>
 
   <div class="div_home-mobile">
     <div class="div_homeContainer">
-     <div class="div_homeTitle">
+      <!-- <div class="div_homeTitle">
         <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
           alt="logoAge" />
         <p>A <b>AGE TELECOM</b> CONECTA VOCÊ AO QUE MAIS IMPORTA!</p>
       </div>
-     <div class="ballons-home">
+      <div class="ballons-home">
         <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
         <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
         <img class="ilimitado" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Ilimitado.png" alt="" />
         <img class="ra100" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/RA100.png" alt="" />
       </div>
-     <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
-       <div class="button_container">
-         <button class="custom_button">Conheça nossos planos</button>
-       </div>
-     </a>
+      <a href="https://www.agetelecom.com.br/pessoa-fisica" target="_blank">
+        <div class="button_container">
+          <button class="custom_button">Conheça nossos planos</button>
+        </div>
+      </a> -->
     </div>
   </div>
 
@@ -139,15 +139,15 @@ export default {
               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
               <div class="card">
                 <div class="card_plan">
-                  <h1>PLANO MEDIUM</h1>
-                  <span><b>740</b>MB</span>
+                  <h1>PLANO BASIC</h1>
+                  <span><b>480</b>MB</span>
                   <p>Franquia ilimitada</p>
                   <p>Wi-fi de alta perfomance</p>
                   <p>instalação Grátis</p>
                 </div>
                 <div class="card_price">
                   <h2>Mensal</h2>
-                  <span><b>R$</b>99,90*</span>
+                  <span><b>R$</b>89,90*</span>
                   <p>CONSULTE CONDIÇÕES</p>
                   <button class="btn-card">ASSINE AGORA</button>
                 </div>
@@ -157,15 +157,16 @@ export default {
               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
               <div class="card-basic">
                 <div class="card_plan">
-                  <h1>PLANO BASIC</h1>
-                  <span><b>480</b>MB</span>
+                  <h1>PLANO MEDIUM</h1>
+                  <span><b>1GB</b></span>
+                  <span>Clube Age</span>
                   <p>Franquia ilimitada</p>
                   <p>Wi-fi de alta perfomance</p>
                   <p>instalação Grátis</p>
                 </div>
                 <div class="card_price">
                   <h2>Mensal</h2>
-                  <span><b>R$</b>89,50*</span>
+                  <span><b>R$</b>99,90*</span>
                   <p>CONSULTE CONDIÇÕES</p>
                   <button class="btn-card">ASSINE AGORA</button>
                 </div>
@@ -177,13 +178,14 @@ export default {
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
                   <span><b>1GB</b></span>
+                  <span style="font-size: 1.4rem;">Clube Age + Deezer</span>
                   <p>Franquia ilimitada</p>
                   <p>Wi-fi de alta perfomance</p>
                   <p>instalação Grátis</p>
                 </div>
                 <div class="card_price">
                   <h2>Mensal</h2>
-                  <span><b>R$</b>129,50*</span>
+                  <span><b>R$</b>109,90*</span>
                   <p>CONSULTE CONDIÇÕES</p>
                   <button class="btn-card">ASSINE AGORA</button>
                 </div>
@@ -191,9 +193,9 @@ export default {
             </a>
           </div>
           <div class="div_cards-mobile">
-            <a class="whatsapp-link" style="text-decoration: none"
+           <a class="whatsapp-link" style="text-decoration: none"
               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
-              <div class="card-basic">
+              <div class="card">
                 <div class="card_plan">
                   <h1>PLANO BASIC</h1>
                   <span><b>480</b>MB</span>
@@ -203,7 +205,7 @@ export default {
                 </div>
                 <div class="card_price">
                   <h2>Mensal</h2>
-                  <span><b>R$</b>89,50*</span>
+                  <span><b>R$</b>89,90*</span>
                   <p>CONSULTE CONDIÇÕES</p>
                   <button class="btn-card">ASSINE AGORA</button>
                 </div>
@@ -211,10 +213,11 @@ export default {
             </a>
             <a class="whatsapp-link" style="text-decoration: none"
               href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age">
-              <div class="card">
+              <div class="card-basic">
                 <div class="card_plan">
                   <h1>PLANO MEDIUM</h1>
-                  <span><b>740</b>MB</span>
+                  <span><b>1GB</b></span>
+                  <span>Clube Age</span>
                   <p>Franquia ilimitada</p>
                   <p>Wi-fi de alta perfomance</p>
                   <p>instalação Grátis</p>
@@ -227,20 +230,20 @@ export default {
                 </div>
               </div>
             </a>
-            <a class="whatsapp-link"
-              href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
+            <a href="https://api.whatsapp.com/send?phone=556140404040&text=Ol%C3%A1%21+Gostaria+de+contratar+os+planos+de+internet+fibra+da+Age"
               style="text-decoration: none">
               <div class="card">
                 <div class="card_plan">
                   <h1>PLANO PRO</h1>
                   <span><b>1GB</b></span>
+                  <span style="font-size: 1.4rem;">Clube Age + Deezer</span>
                   <p>Franquia ilimitada</p>
-                  <p>Wi-fi de alta perfomance</p>
+                  <p>Wi-fi de alta perfomance</p>.
                   <p>instalação Grátis</p>
                 </div>
                 <div class="card_price">
                   <h2>Mensal</h2>
-                  <span><b>R$</b>129,50*</span>
+                  <span><b>R$</b>109,90*</span>
                   <p>CONSULTE CONDIÇÕES</p>
                   <button class="btn-card">ASSINE AGORA</button>
                 </div>
@@ -268,8 +271,8 @@ export default {
               <form action="#" class="div_formFlex" name="assine">
                 <input type="text" placeholder="Seu nome" name="name" id="name" autocomplete="off" required />
                 <input type="email" placeholder="Seu e-mail" name="email" id="email" autocomplete="off" required />
-                <input type="text" placeholder="(DDD) N° de telefone" v-maska:[maskOptions] id="telefone" name="telefone"
-                  autocomplete="off" required />
+                <input type="text" placeholder="(DDD) N° de telefone" v-maska:[maskOptions] id="telefone"
+                  name="telefone" autocomplete="off" required />
                 <select class="form_select" v-model="selectedOption" id="selectOption" name="city" required>
                   <option value="" disabled selected>Selecione sua cidade</option>
                   <option v-for="option in optionsList" :key="option.value" :value="option.value">
@@ -429,8 +432,8 @@ export default {
   position: relative;
   text-align: center;
   width: 100vw;
-  height: 65vh;
-  background: url("/src/assets/bannerTeste.png") center/cover no-repeat;
+  height: 60vh;
+  background: url("/src/assets/AgeFibraLP.png") center/cover no-repeat;
 }
 
 .div_home-mobile {
@@ -690,6 +693,7 @@ export default {
     height: 55%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, #163fd1, #001d86);
@@ -1163,7 +1167,7 @@ export default {
     text-align: center;
     width: 100vw;
     height: 88vh;
-    background: url("/src/assets/bannerMobile.png") center/cover no-repeat;
+    background: url("/src/assets/AgeFibraMobile.png") center/cover no-repeat;
   }
 
   .div_home {
