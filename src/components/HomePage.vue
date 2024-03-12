@@ -433,7 +433,7 @@ export default {
   text-align: center;
   width: 100vw;
   height: 60vh;
-  background: url("/src/assets/AgeFibraLP.png") center/cover no-repeat;
+  background: url("/src/assets/AgeFibraLP2.png") center/cover no-repeat;
 }
 
 .div_home-mobile {
@@ -1167,7 +1167,7 @@ export default {
     text-align: center;
     width: 100vw;
     height: 88vh;
-    background: url("/src/assets/AgeFibraMobile.png") center/cover no-repeat;
+    background: url("/src/assets/AgeFibraMobile2.png") center/cover no-repeat;
   }
 
   .div_home {
