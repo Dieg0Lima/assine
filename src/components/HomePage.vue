@@ -85,7 +85,6 @@ export default {
 <template>
   <div class="div_home">
     <div class="div_homeContainer">
-      <!-- Seção Inicial: Título -->
       <div class="div_homeTitle">
        <div>
          <img class="logo-home" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/logoAgeTelecom.png"
@@ -99,7 +98,6 @@ export default {
            </div>
          </a>
        </div>
-        <!-- Seção Inicial: Botão de chamada para ação -->
        <div class="ballons-home">
          <img class="wifi" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/wifi.png" alt="" />
          <img class="brasilia" src="https://assinenovo.s3.sa-east-1.amazonaws.com/assets/Brasilia.png" alt="" />
