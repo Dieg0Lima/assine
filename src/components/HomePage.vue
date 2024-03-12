@@ -432,7 +432,7 @@ export default {
   position: relative;
   text-align: center;
   width: 100vw;
-  height: 60vh;
+  height: 85vh;
   background: url("/src/assets/AgeFibraLP2.png") center/cover no-repeat;
 }
 
